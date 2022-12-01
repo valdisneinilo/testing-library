@@ -13,7 +13,6 @@ import App from "./App";
 describe("App componet", () => {
   beforeEach(() => {
     // roda antes de cada teste
-    console.log("beforeEach");
   });
 
   it("renders App component whith text 'teste' 'teste2' and 'teste3'", () => {
