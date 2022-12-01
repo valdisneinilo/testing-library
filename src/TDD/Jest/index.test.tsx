@@ -1,4 +1,4 @@
-import { render, screen, userEvent, waitFor } from "../Tests";
+import { render, screen, userEvent, waitFor } from "../../Utils";
 
 describe("Curso TDD", () => {
   beforeEach(() => {}); // serve para executar algo antes de cada teste, exemplo atribuir um valor a uma variável, ou renderizar um componente

@@ -4,7 +4,7 @@
   3 - ao clicar no item do menu, o dropdown deve ser escondido e o item clicado deve ser exibido na tela
 */
 import Dropdown from ".";
-import { render, screen, userEvent } from "../../Tests";
+import { render, screen, userEvent } from "../../Utils";
 
 const optionsItems = ["teste 01", "teste 02", "teste 03"];
 const setOption = jest.fn(); // mock function

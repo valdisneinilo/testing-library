@@ -1,4 +1,4 @@
-import { render, screen, userEvent, waitFor } from "./Tests";
+import { render, screen, userEvent, waitFor } from "./Utils";
 import App from "./App";
 
 /*  describe("Nome que quer dar a familia ou componente", () => {
