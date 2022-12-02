@@ -1,4 +1,5 @@
 import { render, screen, userEvent, waitFor } from "../../Utils";
+import JestApp from "./index";
 
 describe("Curso TDD", () => {
   beforeEach(() => {}); // serve para executar algo antes de cada teste, exemplo atribuir um valor a uma variável, ou renderizar um componente
@@ -93,5 +94,12 @@ describe("Curso TDD", () => {
       .fn()
       .mockImplementation((a: number, b: number): number => a * b); // cria uma função mockada e define a implementação dela
     expect(newMock(6, 6)).toBe(36); // chama a função mockada e verifica se o valor retornado é igual ao esperado
+  });
+});
+
+describe("jestApp", () => {
+  it("Should render JestApp", () => {
+    render(<JestApp />);
+    expect(screen.getByText("Jest App")).toBeInTheDocument();
   });
 });
